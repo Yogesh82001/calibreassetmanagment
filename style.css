@@ -67,7 +67,7 @@ body {
     padding: 0;
 }
 
-.navbar {
+ .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,6 +143,144 @@ body {
     border-radius: 5px;
 }
 
+  .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .nav-links li {
+            position: relative;
+        }
+
+        .navbar .nav-links li a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .navbar .nav-links li:hover > a {
+            background-color: #555;
+        }
+
+        /* Dropdown Styling */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-menu li a {
+            padding: 10px 15px;
+            white-space: nowrap;
+            display: block;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #555;
+        }
+
+        /* Show dropdown on hover */
+        .navbar .nav-links li:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Search Container Styling */
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        .search-container button {
+            padding: 5px 10px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        /* Hamburger Menu Styling */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            height: 2px;
+            width: 25px;
+            background-color: white;
+            margin: 4px;
+            transition: all 0.3s;
+        }
+
+        /* Responsive Styling */
+        @media screen and (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+            }
+
+            .navbar .hamburger {
+                display: flex;
+            }
+
+            .navbar.active .nav-menu {
+                display: flex;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+            }
+
+            .navbar .nav-links {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar .nav-links li a {
+                padding: 10px 20px;
+            }
+
+            .navbar .search-container {
+                justify-content: center;
+                margin-top: 10px;
+            }
+        }
 /* Responsive Styling */
 @media (max-width: 768px) {
     .nav-menu {
@@ -188,10 +326,13 @@ body {
     .search-container button {
         width: 20%;
     }
-}
+} */
 /* Optional: Style carousel controls */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
+}
+#searchButton{
+        background-color: black;
 }

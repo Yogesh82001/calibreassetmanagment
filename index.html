@@ -54,21 +54,30 @@
               </nav>
           </nav> -->
           <nav class="navbar">
-            <div class="logo">Calibre Websole </div>
-            
+            <div class="logo">Calibre Websole</div>
+    
             <div class="nav-menu">
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                        <!-- Dropdown -->
+                        <ul class="dropdown-menu" style="background-color: #000;">
+                            <li><a href="#">Mobile App Development</a></li>
+                            <li><a href="#">Web App Development</a></li>
+                            <li><a href="#">Maintenance</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+    
                 <div class="search-container">
                     <input type="text" placeholder="Search..." id="searchInput">
                     <button type="button" id="searchButton">Search</button>
                 </div>
             </div>
-            
+    
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
